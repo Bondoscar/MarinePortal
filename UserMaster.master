@@ -1,0 +1,172 @@
+﻿<%@ Master Language="VB" CodeFile="UserMaster.master.vb" Inherits="UserMaster" %>
+
+<!-- === BEGIN HEADER === -->
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+    <!--<![endif]-->
+    <head id="Head1" runat="server" />
+        <!-- Title -->
+        <title> Marine Portal </title>
+        <!-- Meta -->
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <!-- Favicon -->
+        <link href="favicon.ico" rel="shortcut icon">
+        <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet" href="assets/css/bootstrap.css" rel="stylesheet">
+        <!-- Template CSS -->
+        <link rel="stylesheet" href="assets/css/animate.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/nexus.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/responsive.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/custom.css" rel="stylesheet">
+        <!-- Google Fonts-->
+        <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div id="body-bg">
+
+            <!-- Header -->
+            <div id="header">
+                <div class="container">
+                    <div class="row">
+                        <!-- Logo -->
+                        <div class="logo">
+                            <a href="Default.Aspx" title="">
+                                <img src="assets/Img/newlogo.png" alt="Logo" />
+                            </a>
+                        </div>
+                        <!-- End Logo -->
+                    </div>
+                </div>
+            </div>
+            <!-- End Header -->
+            <!-- Top Menu -->
+            <div id="hornav" class="bottom-border-shadow">
+                <div class="container no-padding border-bottom">
+                    <div class="row">
+                        <div class="col-md-8 no-padding">
+                            <div class="visible-lg">
+                                <ul id="hornavmenu" class="nav navbar-nav">
+                                    <li>
+                                        <span class="fa-Items ">My Portal</span>
+                                        <ul>
+                                            <li> <a href="UserPortal.aspx">My Summary</a></li>
+                                            <li> <a href="ResetPwd.aspx">Change Password</a></li>
+                                            <li> <a href="ClientSetup.aspx">Client Setup</a></li>
+                                            <li> <a href="Signout.aspx">Sign Out</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span class="fa-Items ">Marine</span>
+                                        <ul>
+                                            <li> <a href="PackagedPolicy.aspx">Marine Certificate</a></li>
+                                            <li> <a href="CancelCert.aspx">Cancel Certificate</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span class="fa-Items ">Motor</span>
+                                        <ul>
+                                            <li> <a href="MotorEntry.aspx">Motor Certificate</a></li>     
+                                            <li> <a href="MotorBatchUpload.aspx">Upload Motor Fleet</a></li>                                     
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span class="fa-Items ">Report</span>
+                                        <ul>
+                                            <li> <a href="BrokerReport.aspx">Motor Reports</a></li>  
+                                            <li> <a href="BrokerReport2.aspx">Marine Reports</a></li>                                     
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span class="fa-Items ">Claims</span> 
+                                        <ul>
+                                             <li><a href="#">Make Claims</a></li>
+                                             <li><a href="ClaimsDownload.aspx" target="_blank">Download Claims Form</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 no-padding">
+                           <ul class="social-icons pull-right">
+                                <li class="social-twitter">
+                                    <a href="https://twitter.com/CAIPLC" target="_blank" title="Twitter"></a>
+                                </li>
+                                <li class="social-facebook">
+                                    <a href="https://www.facebook.com/CAIPLC" target="_blank" title="Facebook"></a>
+                                </li>
+                                <li class="social-googleplus">
+                                    <a href="https://plus.google.com/+CustodianplcNg" target="_blank" title="Google+"></a>
+                                </li>
+                            </ul> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Top Menu -->
+            <!-- === END HEADER === -->
+            <!-- === BEGIN CONTENT === -->
+            <div id="slideshow" class="bottom-border-shadow">
+                <div class="container no-padding background-white bottom-border">
+                    <div class="row">
+                        <!-- Carousel Slideshow -->
+                        <div id="carousel-example" class="carousel slide" data-ride="carousel">
+                            <!-- Carousel Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example" data-slide-to="1"></li>
+                            </ol>
+                            <div class="clearfix"></div>
+                            <form id="form1" runat="server">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder></form>
+                          
+                        </div>
+                        <!-- End Carousel Slideshow -->
+                    </div>
+                </div>
+            </div>
+            
+            <div id="content" class="bottom-border-shadow">
+                
+            </div>
+            <!-- Portfolio -->
+            <div id="portfolio" class="bottom-border-shadow">
+                
+            </div>
+            <!-- End Portfolio -->
+            <!-- === END CONTENT === -->
+            <!-- === BEGIN FOOTER === -->
+            
+            <!-- Footer -->
+            <div id="footer" class="background-grey">
+                <div class="container">
+                    <div class="row">
+                        <!-- Footer Menu -->
+                        <div id="footermenu" class="col-md-8">
+                            Copyright © 2017 - All Rights Reserved - Custodian e-Portal  
+                        </div>
+                        <!-- End Footer Menu -->
+                        <!-- Copyright -->
+                        <div id="copyright" class="col-md-4">
+                            <p class="pull-right">Developed By Custodian IT</p>
+                        </div>
+                        <!-- End Copyright -->
+                    </div>
+                </div>
+            </div>
+            <!-- End Footer -->
+            <!-- JS -->
+            <script type="text/javascript" src="assets/js/jquery.min.js" type="text/javascript"></script>
+            <script type="text/javascript" src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+            <script type="text/javascript" src="assets/js/scripts.js"></script>
+            
+            <!-- End JS -->
+    </body>
+</html>
+<!-- === END FOOTER === -->
